@@ -9,13 +9,10 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <math.h>
-@interface LookImageView : NSObject<UIScrollViewDelegate>
-@property (nonatomic,assign)NSInteger num;
-@property (nonatomic,assign)CGRect oldFram;
-@property (nonatomic,strong)NSArray *imageArr;
-@property (nonatomic,strong)NSMutableArray *imageViewArr;
-@property (nonatomic,strong)NSMutableArray *framArr;
 
--(void)showImage:(NSArray *)imageArr imageView:(UIImageView *)showImageView imageViewArr:(NSMutableArray *)ImageViews;
+@interface LookImageView : NSObject<UIScrollViewDelegate>
+
+
+-(void)showImage:(NSArray *)imageArr imageView:(UIImageView *)showImageView imageViewArr:(NSMutableArray *)ImageViews superView:(UIView *) superView;
 
 @end

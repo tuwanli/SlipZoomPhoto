@@ -25,7 +25,6 @@
         [self createScrollView];
         [self.imageView sd_setImageWithURL:[NSURL URLWithString:photoUrl] placeholderImage:[UIImage imageNamed:@"loading.png"] options:0 progress:^(NSInteger receivedSize, NSInteger expectedSize){
         } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL){
-            NSLog(@"图片加载完成");
             
         }];
     }

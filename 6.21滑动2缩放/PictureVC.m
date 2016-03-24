@@ -84,8 +84,7 @@
 
     }else if([_zoomImageType isEqualToString:@"zoom"])
     {
-        NSLog(@"%@%@%@",array,imageView,imageViewArr);
-        [lookImage showImage:array imageView:imageView imageViewArr:imageViewArr];
+        [lookImage showImage:array imageView:imageView imageViewArr:imageViewArr superView:self.view];
     
         
     }
